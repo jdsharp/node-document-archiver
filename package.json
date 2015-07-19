@@ -1,0 +1,16 @@
+{
+  "name": "document-archiver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^0.22.1",
+    "glob": "^5.0.14",
+    "mkdirp": "^0.5.1"
+  }
+}
