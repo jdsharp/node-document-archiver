@@ -3,7 +3,7 @@ var path = require('path');
 module.exports = [
   { rule    : 'My Receipts',
     enabled : true, // Defaults to true
-    src     : path.join(__dirname, 'example/inbox/**/*'),
+    src     : path.join(__dirname, 'inbox/**/*'),
     match   : [
       // Require the file start with a YYYY-MM-DD prefix
       { test : 'file-prefix-fulldate' },
@@ -18,7 +18,7 @@ module.exports = [
       { action : 'normalize-file' },
       { action : 'categorize', category : 'John Doe' },
       { action : 'tags', add : ['TEST'] },
-      { action : 'copy', dest : path.join(__dirname, 'example/archived/documents/') },
+      { action : 'copy', dest : path.join(__dirname, 'archived/documents/') },
       { action : 'folders-by-year' },
     ]
   }
